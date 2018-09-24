@@ -1,138 +1,267 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>mendeleiev</title>
-	<style>
-	table, th, td {
-			border:1px solid black;
-			border-collapse:collapse;
-	}
-	th, td {
-			padding:5px;
-			width:70px;
-			height:70px;
-	}
-	td#td01 {
-			background-color:orange;
-	}
-	.mass {
-			font-size:30%; text-align:right;
-	}
-	</style>
-</head>
-<body>
-<h1>Mendeleiev</h1>
-<table>
-	<tr>
-		<td style="background-color:purple;">test</td>
-		<td style="border-top : hidden; border-right : hidden;"></td>
-		<td colspan ="10" style="border-top : hidden;"></td>
-		<td colspan="5" style="border-top : hidden; border-left : hidden;"></td>
-		<td>test</td>
-	</tr>
-	<tr>
-		<td id="td01">test</td>
-		<td style="boder-top:1px solid black">test</td>
-		<td colspan ="10" style="border-top : hidden;"></td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-	</tr>
-	<tr>
-		<td id="td01">test</td>
-		<td style="boder-top:1px solid black">test</td>
-		<td colspan ="10" style="border-top : hidden;"></td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-	</tr>
-	<tr>
-		<td id="td01"><p style="font-size:30%; text-align:right;">test</p><p style="font-size:150%; text-align:center;">test2</p><p>test3</p></td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-	</tr>
-	<tr>
-		<td id="td01">test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-	</tr>
-	<tr>
-		<td id="td01">test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-	</tr>
-	<tr>
-		<td id="td01">test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-		<td>test</td>
-	</tr>
-</table>
-<IMG src="file:///Users/arthurlanter/Projet%20de%20vie/42/PHP/D00/Mendel.png" style="width:80%">
-</body>
+	<head>
+		<title>mendeleiev</title>
+		<style>
+table {
+	border-spacing:4px;
+}
+th, td {
+	border:2px solid black;
+	padding:5px;
+	width:70px;
+	height:70px;
+}
+td#alca {
+	background-color:#FF3243;
+}
+td#alca_t {
+	background-color:#FBB889;
+}
+td#metal_t {
+	background-color:#FF98A1;
+}
+td#metal_p {
+	background-color:#CCCCCC;
+}
+td#metal_d {
+	background-color:#CDCD9D;
+}
+td#oth_no_m {
+	background-color:#9DFA9D;
+}
+td#halo {
+	background-color:#FFFEA0;
+}
+td#nobl_gaz {
+	background-color:#B2EEEE;
+}
+td#unclass {
+	background-color:#F5F5F5;
+}
+td#lanth {
+	background-color:#FFC2F9;
+}
+td#acti {
+	background-color:#FF6FA9;
+}
+.sym {
+	font-size:180%;
+	text-align:center;
+	margin:2px;
+}
+.num {
+	font-size:80%;
+	text-align:left;
+	margin:2px;
+}
+.mass {
+	font-size:80%;
+	text-align:right;
+	margin:2px;
+}
+.noborder {
+	border:none;
+}
+.period {
+	text-align:right;
+	width:1%;
+}
+.group {
+	text-align:center;
+	vertical-align:bottom;
+}
+.dashed {
+	border-style: dashed;
+}
+.dotted {
+	border-style: dotted;
+}
+.trans {
+	opacity:0.7;
+}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class="noborder period"></td>
+				<td class="noborder group">1</td>
+				<td colspan ="17" class="noborder"><h1 style="text-align:center;">Tableau périodique des éléments</h1></td>
+				<td class="noborder group">18</td>
+			</tr>
+			<tr>
+				<td class="noborder period">1</td>
+				<td id="oth_no_m" style="color:red"><p class="mass">1.007675</p><p class="sym">H</p><p class="num">1</p></td>
+				<td class="noborder group">2</td>
+				<td colspan ="11" class="noborder"></td>
+				<td class="noborder group">13</td>
+				<td class="noborder group">14</td>
+				<td class="noborder group">15</td>
+				<td class="noborder group">16</td>
+				<td class="noborder group">17</td>
+				<td id="nobl_gaz" style="color:red"><p class="mass">4.002602</p><p class="sym">He</p><p class="num">2</p></td>
+			</tr>
+			<tr>
+				<td class="noborder period">2</td>
+				<td id="alca"><p class="mass">6.9395</p><p class="sym">Li</p><p class="num">3</p></td>
+				<td id="alca_t"><p class="mass">9.0121831</p><p class="sym">Be</p><p class="num">4</p></td>
+				<td colspan ="11" class="noborder"></td>
+				<td id="metal_d"><p class="mass">10.8135</p><p class="sym">B</p><p class="num">5</p></td>
+				<td id="oth_no_m"><p class="mass">12.0106</p><p class="sym">C</p><p class="num">6</p></td>
+				<td id="oth_no_m" style="color:red"><p class="mass">14.006855</p><p class="sym">N</p><p class="num">7</p></td>
+				<td id="oth_no_m" style="color:red"><p class="mass">15.99940</p><p class="sym">O</p><p class="num">8</p></td>
+				<td id="halo" style="color:red"><p class="mass">18.99840316</p><p class="sym">F</p><p class="num">9</p></td>
+				<td id="nobl_gaz" style="color:red"><p class="mass">20.1797 (6)</p><p class="sym">Ne</p><p class="num">10</p></td>
+			</tr>
+			<tr>
+				<td class="noborder period">3</td>
+				<td id="alca"><p class="mass">39.0983</p><p class="sym">K</p><p class="num">19</p></td>
+				<td id="alca_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td class="noborder" style="width:2%;"></td>
+				<td class="noborder group">3</td>
+				<td class="noborder group">4</td>
+				<td class="noborder group">5</td>
+				<td class="noborder group">6</td>
+				<td class="noborder group">7</td>
+				<td class="noborder group">8</td>
+				<td class="noborder group">9</td>
+				<td class="noborder group">10</td>
+				<td class="noborder group">11</td>
+				<td class="noborder group">12</td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_d"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="oth_no_m"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="oth_no_m"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="halo"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="nobl_gaz"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+			</tr>
+			<tr>
+				<td class="noborder period">4</td>
+				<td id="alca"><p class="mass">39.0983</p><p class="sym">K</p><p class="num">19</p></td>
+				<td id="alca_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td class="noborder" style="width:2%;"></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_d"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_d"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="oth_no_m"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="halo"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="nobl_gaz"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+			</tr>
+			<tr>
+				<td class="noborder period">5</td>
+				<td id="alca"><p class="mass">39.0983</p><p class="sym">K</p><p class="num">19</p></td>
+				<td id="alca_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td class="noborder" style="width:2%;"></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t" class="dashed"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_d"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_d"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="halo"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="nobl_gaz"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+			</tr>
+			<tr>
+				<td class="noborder period">6</td>
+				<td id="alca"><p class="mass">39.0983</p><p class="sym">K</p><p class="num">19</p></td>
+				<td id="alca_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td colspan ="2" id="lanth"><p class="mass" style="text-align:center;">Lanthanides</p><p style="margin:2px; font-size:120%; text-align:center">57-71</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_p"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="halo"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="nobl_gaz"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+			</tr>
+			<tr>
+				<td class="noborder period">7</td>
+				<td id="alca"><p class="mass">39.0983</p><p class="sym">K</p><p class="num">19</p></td>
+				<td id="alca_t"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td colspan ="2" id="acti"><p class="mass" style="text-align:center;">Actinides</p><p style="margin:2px; font-size:120%; text-align:center">89-103</p></td>
+				<td id="metal_t" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="metal_t" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="unclass" class="dotted trans"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+			</tr>
+			<tr>
+				<td class="noborder" style="height:1%;"></td>
+			</tr>
+			<tr>
+				<td colspan ="5" class="noborder"></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="lanth"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+			</tr>
+			<tr>
+				<td colspan ="5" class="noborder"></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+				<td id="acti"><p class="mass">0</p><p class="sym">.</p><p class="num">0</p></td>
+			</tr>
+		</table>
+		<IMG src="file:///Users/alanter/Projets/PHP/D00/Tab2.png" style="width:80%">
+	</body>
 </html>
