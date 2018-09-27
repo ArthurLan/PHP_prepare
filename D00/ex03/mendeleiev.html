@@ -2,94 +2,10 @@
 <html>
 	<head>
 		<title>mendeleiev</title>
-		<style>
-table {
-	border-spacing:4px;
-}
-th, td {
-	border:2px solid black;
-	padding:0.1%;
-	min-width:20px;
-	min-height:auto;
-	max-width:20px;
-	max-height:auto;
-	width:70px;
-	height:70px;
-	padding:5px;
-		
-}
-td#alca {
-	background-color:#FF3243;
-}
-td#alca_t {
-	background-color:#FBB889;
-}
-td#metal_t {
-	background-color:#FF98A1;
-}
-td#metal_p {
-	background-color:#CCCCCC;
-}
-td#metal_d {
-	background-color:#CDCD9D;
-}
-td#oth_no_m {
-	background-color:#9DFA9D;
-}
-td#halo {
-	background-color:#FFFEA0;
-}
-td#nobl_gaz {
-	background-color:#B2EEEE;
-}
-td#unclass {
-	background-color:#F5F5F5;
-}
-td#lanth {
-	background-color:#FFC2F9;
-}
-td#acti {
-	background-color:#FF6FA9;
-}
-.sym {
-	font-size:180%;
-	text-align:center;
-	margin:1px;
-}
-.num {
-	font-size:80%;
-	text-align:left;
-	margin:1px;
-}
-.mass {
-	font-size:60%;
-	text-align:right;
-	margin:1px;
-}
-.noborder {
-	border:none;
-}
-.period {
-	text-align:right;
-	width:1%;
-}
-.group {
-	text-align:center;
-	vertical-align:bottom;
-}
-.dashed {
-	border-style: dashed;
-}
-.dotted {
-	border-style: dotted;
-}
-.trans {
-	opacity:0.7;
-}
-		</style>
+		<link rel="stylesheet" type="text/css" href="mendeleiev.css">
 	</head>
 	<body>
-		<div style="width:80%; height:80%; min-width:1200px">
+		<div class="center">
 		<table>
 			<tr>
 				<td class="noborder period"></td>
@@ -191,7 +107,7 @@ td#acti {
 				<td class="noborder period">6</td>
 				<td id="alca"><p class="mass">132.905452</p><p class="sym">Cs</p><p class="num">55</p></td>
 				<td id="alca_t"><p class="mass">137.327 (7)</p><p class="sym">Ba</p><p class="num">56</p></td>
-				<td colspan ="2" id="lanth"><p class="mass" style="text-align:center;">Lanthanides</p><p style="margin:2px; font-size:120%; text-align:center">57-71</p></td>
+				<td colspan ="2" id="lanth"><p class="mass" style="text-align:center;">Lanthanides</p><p style="margin:2px; font-size:1vw; text-align:center">57-71</p></td>
 				<td id="metal_t"><p class="mass">178.49 (2)</p><p class="sym">Hf</p><p class="num">72</p></td>
 				<td id="metal_t"><p class="mass">180.94788</p><p class="sym">Ta</p><p class="num">73</p></td>
 				<td id="metal_t"><p class="mass">183.84 (1)</p><p class="sym">W</p><p class="num">74</p></td>
@@ -212,7 +128,7 @@ td#acti {
 				<td class="noborder period">7</td>
 				<td id="alca"><p class="mass">[223]</p><p class="sym">Fr</p><p class="num">87</p></td>
 				<td id="alca_t"><p class="mass">[226]</p><p class="sym">Ra</p><p class="num">88</p></td>
-				<td colspan ="2" id="acti"><p class="mass" style="text-align:center;">Actinides</p><p style="margin:2px; font-size:120%; text-align:center">89-103</p></td>
+				<td colspan ="2" id="acti"><p class="mass" style="text-align:center;">Actinides</p><p style="margin:2px; font-size:1vw; text-align:center">89-103</p></td>
 				<td id="metal_t" class="dotted trans"><p class="mass">[267]</p><p class="sym">Rf</p><p class="num">104</p></td>
 				<td id="metal_t" class="dotted trans"><p class="mass">[268]</p><p class="sym">Db</p><p class="num">105</p></td>
 				<td id="metal_t" class="dotted trans"><p class="mass">[269]</p><p class="sym">Sg</p><p class="num">106</p></td>

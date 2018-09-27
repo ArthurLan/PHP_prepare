@@ -1,0 +1,85 @@
+table {
+	border-spacing:2px;
+}
+th, td {
+	border:2px solid black;
+	width:1vw;
+	height:1vh;
+	padding:0.2vw;
+
+}
+td#alca {
+	background-color:#FF3243;
+}
+td#alca_t {
+	background-color:#FBB889;
+}
+td#metal_t {
+	background-color:#FF98A1;
+}
+td#metal_p {
+	background-color:#CCCCCC;
+}
+td#metal_d {
+	background-color:#CDCD9D;
+}
+td#oth_no_m {
+	background-color:#9DFA9D;
+}
+td#halo {
+	background-color:#FFFEA0;
+}
+td#nobl_gaz {
+	background-color:#B2EEEE;
+}
+td#unclass {
+	background-color:#F5F5F5;
+}
+td#lanth {
+	background-color:#FFC2F9;
+}
+td#acti {
+	background-color:#FF6FA9;
+}
+.sym {
+	font-size:1.2vw;
+	text-align:center;
+	margin:1px;
+}
+.num {
+	font-size:0.7vw;
+	text-align:left;
+	margin:1px;
+}
+.mass {
+	font-size:0.6vw;
+	text-align:right;
+	margin:1px;
+}
+.noborder {
+	border:none;
+}
+.period {
+	font-size:0.9vw;
+	text-align:right;
+	width:1%;
+}
+.group {
+	font-size:0.9vw;
+	text-align:center;
+	vertical-align:bottom;
+}
+.dashed {
+	border-style: dashed;
+}
+.dotted {
+	border-style: dotted;
+}
+.trans {
+	opacity:0.7;
+}
+.center {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
