@@ -3,8 +3,7 @@ table {
 }
 th, td {
 	border:2px solid black;
-	width:1vw;
-	height:1vh;
+	min-width:3vw;
 	padding:0.2vw;
 
 }
@@ -52,7 +51,7 @@ td#acti {
 	margin:1px;
 }
 .mass {
-	font-size:0.6vw;
+	font-size:0.5vw;
 	text-align:right;
 	margin:1px;
 }
@@ -62,12 +61,13 @@ td#acti {
 .period {
 	font-size:0.9vw;
 	text-align:right;
-	width:1%;
+	min-width:1vm;
 }
 .group {
 	font-size:0.9vw;
 	text-align:center;
 	vertical-align:bottom;
+	min-width:1vw;
 }
 .dashed {
 	border-style: dashed;
@@ -79,7 +79,7 @@ td#acti {
 	opacity:0.7;
 }
 .center {
-	width: 90%;
+	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
 }
